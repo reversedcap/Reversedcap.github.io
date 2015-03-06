@@ -1,0 +1,152 @@
+/* Font Face */
+
+@font-face {
+    font-family: 'RCSFont-Bold';
+    src: url('Signika-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RCSFont-Reg';
+    src: url('Signika-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RCSFont-Light';
+    src: url('Signika-Light.ttf') format('truetype');
+}
+/* General */
+
+* {
+    margin: 0;
+    font-family: RCSFont-Reg;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+    /*bottom = footer height */
+    
+    background-color: #bb1b8d;
+    font-family: 'RCSFont-Reg';
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #4b0049;
+    box-shadow: 0 -10px 0px #3B0139;
+}
+/* Header */
+
+header {
+    margin-top: 25px;
+    height: 191px;
+    background-image: url(images/header.png);
+    font-family: RCSFont-Bold;
+    box-shadow: 0 10px 0px #3B0139;
+}
+
+header #logo {
+    float: left;
+    width: 350px;
+    height: 180px;
+    margin: 6px 0 0 50px;
+}
+
+header #nav {
+    float: right;
+    height: 25px;
+    margin: 45px 100px 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+}
+
+header #nav ul {
+    list-style: none;
+    height: 25px;
+}
+
+header #nav ul li {
+    float: left;
+    padding: 20px;
+    margin: 20px
+}
+
+header #nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header #nav ul li a:hover {
+    text-decoration: overline;
+}
+/* Content */
+
+#content {
+    font-family: RCSFont-Reg;
+    color: #fff;
+}
+
+#content #cont-outer {
+    width: 1000px;
+    height: 400px;
+    padding-top: 10px;
+    margin: 50px auto;
+}
+
+#content #cont-outer #cont-wrap {
+    width: 970px;
+    height: 300px;
+    padding-top: 60px;
+    margin: 0 auto;
+    background-color: rgba(75, 0, 73, 0.40);
+    box-shadow: 5px 5px 0px #450243;
+}
+
+#content #cont-wrap #cont-header {
+    font-size: 24px;
+    padding-left: 150px;
+    height: 30px;
+    font-family: RCSFont-Bold;
+    color: #fff;
+    /*#380737;*/
+}
+
+#content #cont-wrap #cont-content {
+    padding-left: 150px;
+    margin: 20px auto;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #fff;
+}
+/* Footer */
+
+footer #footer-wrap {
+    margin-top: 20;
+    background-color: #bb1b8d;
+    height: 20px;
+    width: 315px;
+    float: left;
+    font-family: 'RCSFont-Light';
+    color: #fff;
+    margin-left: 50px;
+    padding-left: 40px;
+    box-shadow: 5px 5px 0px #3B0139;
+}
+
+footer #footer-icons {
+    float: right;
+    margin: 13px 40px auto;
+}
+
+footer #footer-icons img {
+    width: 30px;
+}
